@@ -11,8 +11,38 @@
 # Assume your user is a developer — e.g. you don't need to write a user interface.
 
 def pig_latin(word)
+  wordarray=word.split('')
+  firstletter =wordarray[0]
+  if firstletter == "a"
+    wordarray.push("way")
+    vowel = wordarray.join
+    puts vowel
+  elsif firstletter == "e"
+    wordarray.push("way")
+    vowel = wordarray.join
+    puts vowel
+  elsif firstletter == "i"
+    wordarray.push("way")
+    vowel = wordarray.join
+    puts vowel
+  elsif firstletter == "o"
+    wordarray.push("way")
+    vowel = wordarray.join
+    puts vowel
+  elsif firstletter == "u"
+    wordarray.push("way")
+    vowel = wordarray.join
+    puts vowel
 
+  else
+    letterrmv = wordarray.shift
+    wordarray.push(letterrmv, "ay")
+    const =wordarray.join
+    puts const
+  end
 end
+
+pig_latin("gold")
 
 ## Tests:
 
